@@ -1,0 +1,7 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+      curl -fsSL https://install.julialang.org | sh
+      echo 'export PATH="$HOME/.julia/bin:$PATH"' >> ~/.bashrc
